@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "theme-custom font-jakarta flex min-h-screen bg-[#070707] text-[#FBEAD2] antialiased",
+          "theme-custom flex min-h-screen bg-[#070707] font-jakarta text-[#FBEAD2] antialiased",
           jakartaSans.variable,
         )}
       >

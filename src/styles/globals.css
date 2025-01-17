@@ -104,6 +104,13 @@
   }
 }
 
+@font-face {
+  font-family: "Vladimir Script";
+  src: url("/fonts/VladimirScript.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -146,7 +153,6 @@
 .hidden-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
 
 /*model viewer*/
 #model {
