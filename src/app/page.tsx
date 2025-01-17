@@ -9,6 +9,7 @@ import Location from "./(section)/Location";
 import ConnectWithUs from "./(section)/ConnectWithUs";
 import Orders from "./(section)/Orders";
 import Specialities from "./(section)/Specialities";
+import Footer from "./(section)/Footer";
 
 export default function HomePage() {
   return (
@@ -32,6 +33,7 @@ export default function HomePage() {
         {/* <Map /> */}
         {/* <ConnectWithUs /> */}
         {/* <Footer /> */}
+        <Footer />
       </div>
     </main>
   );
