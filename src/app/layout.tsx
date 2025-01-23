@@ -20,6 +20,7 @@ const monteserrat = Montserrat({
   variable: "--font-monteserrat",
   weight: ["400", "500", "600", "700", "800"],
 })
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {

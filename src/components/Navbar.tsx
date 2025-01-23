@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Sidebar from "./SideBar";
-import CartSheet from "./cart/CartSheet";
 import { BetaMenuActive } from "@/lib/constants";
 
 const Navbar = ({
@@ -32,8 +31,8 @@ const Navbar = ({
       className={`${position} top-0 z-50 flex h-[10vh] w-full max-w-[1300px] items-center bg-transparent p-4 transition-all duration-300 ease-in-out`}
     >
       <div className="flex h-full w-full items-center justify-between">
-        <Link href="/">
-          <Image src="/images/logo.png" width={86} height={106} alt="logo" className="w-12 h-12 md:hidden" />
+        <Link href="/" className="md:hidden">
+          <Image src="/images/logo.png" width={86} height={106} alt="logo" className="w-10 h-12 md:hidden" />
         </Link>
         {!isScrolled && (
           <div className="hidden flex-row items-center justify-center gap-[3.48rem] md:flex">
@@ -42,7 +41,7 @@ const Navbar = ({
               variant="link"
               className="px-0 uppercase text-accent"
             >
-              <Link href="/menu">Menu</Link>
+              <Link href="/menu">Order Online</Link>
             </Button>
             <Button
               asChild
@@ -119,7 +118,7 @@ const Navbar = ({
           </Sidebar>
         )}
       </div>
-    </nav >
+    </nav>
   );
 };
 

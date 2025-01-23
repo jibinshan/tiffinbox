@@ -7,9 +7,11 @@ import {
 } from "@stripe/react-stripe-js";
 import { useState, type FC } from "react";
 
-const PaymentForm: FC = () => {
+const PaymentForm: FC<{
+  _id: string;
+}> = ({ _id }) => {
   const [loading, setLoading] = useState(false);
-  const { restaurant } = useRestaurant()
+  const { restaurant } = useRestaurant();
   const stripe = useStripe();
   const elements = useElements();
 
@@ -23,7 +25,7 @@ const PaymentForm: FC = () => {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `${window.location.origin}/payment/success`,
+        return_url: `${window.location.origin}/payment/${_id}/status`,
       },
     });
 
@@ -44,7 +46,7 @@ const PaymentForm: FC = () => {
         options={{
           layout: "tabs",
           business: {
-            name: restaurant?.name ? restaurant?.name : '',
+            name: restaurant?.name ? restaurant?.name : "",
           },
           terms: {
             card: "always",

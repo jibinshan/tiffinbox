@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-row items-center justify-center gap-6">
             <Link
-              href={"#"}
+              href="/table-booking"
               className="font-jakarta text-xs font-[400] uppercase leading-[25px] tracking-[4px] text-[#9a9a9a] lg:pl-3"
             >
               Book a Table
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-row items-center justify-center gap-6">
             <Link
-              href={"#"}
+              href="/about-us"
               className="font-jakarta text-xs font-[400] uppercase leading-[25px] tracking-[4px] text-[#9a9a9a] lg:pl-3"
             >
               About Us

@@ -23,7 +23,7 @@ const Hero = ({ }) => {
       </div>
       <div className="relative mt-14 flex min-h-[100vh] w-full flex-col items-center justify-center md:justify-start gap-3 px-3 md:mt-0 md:flex-row md:gap-0 md:px-[130px]">
         <div className="flex flex-col items-center gap-5 md:items-start z-30">
-          <Image src="/images/logo.png" width={86} height={106} alt="logo" className="hidden md:block w-12 h-12" />
+          <Image src="/images/logo.png" width={86} height={106} alt="logo" className="hidden md:block w-12 h-16" />
           <p className="text-center font-jakarta text-3xl font-thin uppercase leading-[60px] tracking-[10px] text-[#9A9A9A] md:text-start md:text-7xl md:leading-[100px]">
             Authentic
             <br />
