@@ -88,15 +88,15 @@ const Special = ({ }) => {
     // };
   }, [])
   return (
-    <section className="relative flex h-full w-full justify-center bg-[#070707]">
+    <section className="relative flex h-full w-full justify-center bg-[#070707] overflow-x-hidden">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12">
-        <h3 className="special-title uppercase -ml-[50px] font-jakarta">Special</h3>
-        <h1 className="special-head max-w-[600px] text-center text-5xl sm:text-7xl font-jakarta">
-          Tiffin Box{' '}<span className="text-primary">Specials</span>
+        <h3 className="special-title uppercase -ml-[50px] font-jakarta text-[#FCB017] tracking-[6px]">Featured Menu</h3>
+        <h1 className="special-head max-w-[400px] md:max-w-[650px] text-center text-2xl md:text-5xl font-jakarta uppercase text-[#9A9A9A] md:tracking-[7px] md:leading-[60px]">
+          Discover our most popular dishes
         </h1>
-        <p className="special-description max-w-[500px] px-2 text-center font-light leading-[160%] text-[#C1B6A6] md:px-0 md:-ml-[50px] font-jakarta">
+        {/* <p className="special-description max-w-[500px] px-2 text-center font-light leading-[160%] text-[#C1B6A6] md:px-0 md:-ml-[50px] font-jakarta">
           We bring the finest cuts of beef to Tiffin Box with a commitment to quality and sustainability. Embracing the city`s vibrant culinary heritage, each dish reflects our dedication to responsible sourcing. Experience dining that honors both our guests and the environment.
-        </p>
+        </p> */}
         {modelData && (
           <div className="relative z-20 flex min-h-[400px] w-full flex-col justify-center px-2">
             <EmblaCarousel slides={modelData} options={OPTIONS} />

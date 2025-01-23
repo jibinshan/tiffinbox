@@ -68,13 +68,13 @@ const Reviews = ({ }) => {
     <section className="relative flex h-full w-full justify-center bg-transparent">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-start justify-center gap-4 py-12 md:py-44">
         <div className="flex h-full w-full flex-col items-start justify-center gap-2 lg:gap-4">
-          <h3 className="w-full text-center font-oswald uppercase text-[#fbead2]">
+          <p className="w-full text-center font-jakarta uppercase tracking-[5px] text-[#FCB017]">
             Reviews
-          </h3>
+          </p>
           <div className="w-full flex flex-col items-center justify-center gap-4">
-            <h1 className="review-head w-full text-center font-oswald text-5xl font-bold text-[#ffffff]">
+            <p className="review-head font-jakarta w-full text-center text-3xl uppercase tracking-[12px] text-[#9A9A9A] md:text-4xl md:leading-[60px]">
               Hear Our Guests
-            </h1>
+            </p>
           </div>
         </div>
         <div className="flex w-full items-center justify-center p-4">

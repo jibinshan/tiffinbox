@@ -14,6 +14,7 @@ import type {
   EmblaOptionsType,
 } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
+import Image from "next/image";
 import React, { useCallback, useEffect, useRef } from "react";
 
 const TWEEN_FACTOR_BASE = 0.52;
@@ -114,7 +115,16 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <>
-      <div className="z-50 flex w-full flex-col items-center gap-2">
+      <div className="relative z-50 flex w-full flex-col items-center gap-2">
+        <div className="absolute w-full h-full left-0 top-0 flex justify-center items-center">
+          <Image
+            src='/images/home/modelbg.svg'
+            width={620}
+            height={769}
+            alt="modelbg"
+            className="max-w-[500px]"
+          />
+        </div>
         <div className="embla-menu">
           <div className="embla-menu__viewport" ref={emblaRef}>
             <div className="embla-menu__container">

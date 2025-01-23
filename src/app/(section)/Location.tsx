@@ -7,7 +7,7 @@ const Location = ({ }) => {
             <div className="w-full max-w-[1300px] px-3 md:px-0 py-12 md:py-24 flex flex-col md:flex-row gap-3">
                 <div className="w-full md:w-1/2 flex flex-col gap-8 items-start justify-start">
                     <p className="text-[#FCB017] font-jakarta uppercase">Our Location</p>
-                    <p className="text-[#9A9A9A] font-jakarta text-5xl md:text-7xl uppercase font-[300] md:tracking-[20px]">Find Us<br />
+                    <p className="text-[#9A9A9A] font-jakarta text-5xl md:text-7xl uppercase font-[300] md:tracking-[20px] md:leading-[90px]">Find Us<br />
                         at These<br /> Convenient<br /> Locations</p>
                     <Button variant='outline' className="flex items-center justify-center px-6 py-6 rounded-none gap-3"><span>our store</span> <Icons.rightArrow /></Button>
                 </div>

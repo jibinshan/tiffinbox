@@ -2,7 +2,7 @@ import { Icons } from "@/components/Icon";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 
-const Orders = ({}) => {
+const Orders = ({ }) => {
   return (
     <section
       id="orders"
@@ -15,14 +15,15 @@ const Orders = ({}) => {
       }}
     >
       <div
-        className="flex w-full max-w-[1300px] flex-col gap-3 px-3 py-12 md:flex-row md:px-0 md:py-24"
-        style={{
-          backgroundImage: `url('/images/home/order.png')`,
-          backgroundPosition: "top right",
-          backgroundSize: "auto",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+        className="relative flex w-full max-w-[1300px] flex-col gap-3 px-3 py-12 md:flex-row md:px-0 md:py-24">
+        <div className="absolute hidden md:block w-full h-full left-0 top-0"
+          style={{
+            backgroundImage: `url('/images/home/order.png')`,
+            backgroundPosition: "top right",
+            backgroundSize: "auto",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
         <div className="flex w-full flex-col items-start justify-start gap-8 md:w-1/2">
           <p className="font-jakarta uppercase text-[#FCB017]">ONLINE ORDER</p>
           <p className="font-jakarta text-5xl font-[300] uppercase text-[#9A9A9A] md:tracking-[16px]">

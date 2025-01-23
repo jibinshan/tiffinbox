@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         jakarta: ["var(--font-jakarta)", ...fontFamily.sans],
+        monteserrat: ["var(--font-monteserrat)", ...fontFamily.sans],
         sans: ["Inter", "sans-serif"],
       },
       borderRadius: {

@@ -33,7 +33,7 @@ const Navbar = ({
     >
       <div className="flex h-full w-full items-center justify-between">
         <Link href="/">
-          <Image src="/images/logo.png" width={86} height={106} alt="logo" className="w-12 h-12" />
+          <Image src="/images/logo.png" width={86} height={106} alt="logo" className="w-12 h-12 md:hidden" />
         </Link>
         {!isScrolled && (
           <div className="hidden flex-row items-center justify-center gap-[3.48rem] md:flex">
@@ -65,13 +65,13 @@ const Navbar = ({
             >
               <Link href="/table-booking">Booking</Link>
             </Button>
-            <Button
+            {/* <Button
               asChild
               variant="link"
               className="px-0 uppercase text-accent"
             >
               <Link href="/gift-voucher">Gift Voucher</Link>
-            </Button>
+            </Button> */}
           </div>
         )}
         {!isScrolled && (
@@ -88,7 +88,7 @@ const Navbar = ({
             </CartSheet> */}
             <Link href='/menu'>
               <Button
-                className="group h-11 items-center gap-[1.19rem] rounded-full bg-[#ccad64] font-semibold uppercase text-[#282828] hover:bg-primary"
+                className="group h-11 items-center gap-[1.19rem] rounded-none bg-[#FCB017] font-monteserrat font-semibold capitalize text-[#282828] hover:bg-primary group"
                 variant="secondary"
               >
                 View Menu

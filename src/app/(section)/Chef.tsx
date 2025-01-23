@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Chef = ({}) => {
+const Chef = ({ }) => {
   return (
     <section
       id="chef"
@@ -27,7 +27,7 @@ const Chef = ({}) => {
       <p className="max-w-[1300px] font-jakarta uppercase tracking-[5px] text-[#FCB017]">
         Chef
       </p>
-      <p className="font-jakarta text-3xl uppercase tracking-[12px] text-[#9A9A9A] md:text-4xl md:leading-[60px]">
+      <p className="font-jakarta w-full text-center text-3xl uppercase tracking-[12px] text-[#9A9A9A] md:text-4xl md:leading-[60px]">
         Our brand chef
       </p>
       <div className="relative flex w-full max-w-[1300px] px-3 pb-12 pt-9 md:px-0 md:pb-24">
@@ -43,7 +43,7 @@ const Chef = ({}) => {
           </div>
           <div className="relative flex w-full justify-center bg-transparent p-4 md:w-1/2 md:items-center">
             <div className="z-50 flex flex-col gap-4">
-              <div className="flex flex-col gap-0">
+              <div className="flex flex-col gap-3 md:gap-0">
                 <p className="font-jakarta text-3xl uppercase tracking-[6px] text-[#9A9A9A] md:leading-[60px]">
                   Chef Jomon
                 </p>
