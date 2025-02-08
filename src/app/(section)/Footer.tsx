@@ -16,7 +16,14 @@ const Footer: React.FC = () => {
             alt="hero"
             className=""
           />
-          <h3 className="w-full max-w-[360px] text-center font-jakarta text-lg font-[300] uppercase leading-[40px] tracking-[12px] text-[#9a9a9a] lg:text-xl">
+          <Image
+            src="/images/halal.jpg"
+            width={90}
+            height={90}
+            alt="hero"
+            className=""
+          />
+          {/* <h3 className="w-full max-w-[360px] text-center font-jakarta text-lg font-[300] uppercase leading-[40px] tracking-[12px] text-[#9a9a9a] lg:text-xl">
             Subscribe to our newsletter
           </h3>
           <div className="flex gap-4 lg:flex-row">
@@ -28,22 +35,43 @@ const Footer: React.FC = () => {
             <Button className="flex gap-4 rounded-none border border-white bg-black py-6 pl-5 pr-2 text-[#9a9a9a] hover:text-black">
               Subscribe <ChevronRight className="text-primary" />
             </Button>
-          </div>
+          </div> */}
         </div>
-        <div className="flex flex-col items-center justify-center gap-2">
-          <p className="font-jakarta text-sm font-[600] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-base">
-            Contact U
-          </p>
-          <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm">
-            0151 245 1500
-          </p>
-          <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm">
-            Info@tiffinbox.co.uk
-          </p>
-          <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm">
-            {" "}
-            Allerton Rd, Liverpool L25 7RE
-          </p>
+        <div className="flex flex-col items-start justify-start gap-6 lg:flex-row lg:gap-28">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <p className="font-jakarta text-sm font-[600] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-base">
+              Contact US
+            </p>
+            <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm">
+              0151 245 1500
+            </p>
+            <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm">
+              Info@tiffinbox.co.uk
+            </p>
+            <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm">
+              {" "}
+              Allerton Rd, Liverpool L25 7RE
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-4 lg:items-start">
+            <p className="font-jakarta text-sm font-[600] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-base">
+              Opening hours
+            </p>
+            <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm">
+              Tuesday-Friday : 17:00-00:00
+            </p>
+            <div className="flex flex-row gap-2">
+              <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm">
+                Saturday-Sunday :
+              </p>
+              <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm lg:leading-[30px]">
+                13:00-16:00 <br /> (Lunch) <br /> 17:00-00:00
+              </p>
+            </div>
+            <p className="font-jakarta text-xs font-[400] uppercase leading-[28px] tracking-[4px] text-[#9a9a9a] lg:text-sm">
+              Monday : Closed
+            </p>
+          </div>
         </div>
         <div className="flex flex-col gap-4 lg:flex-row">
           <div className="flex flex-row items-center justify-center gap-6">
@@ -87,7 +115,7 @@ const Footer: React.FC = () => {
               href={"#"}
               className="font-jakarta text-xs font-[400] uppercase leading-[25px] tracking-[4px] text-[#9a9a9a]"
             >
-              Contact U
+              Contact US
             </Link>
           </div>
         </div>
